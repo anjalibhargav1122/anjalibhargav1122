@@ -1,0 +1,92 @@
+.completed {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.721);
+}
+
+
+.pic {
+    background-image: url(https://images.pexels.com/photos/10136425/pexels-photo-10136425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    opacity: 0.6;
+    width: 100vw;
+    padding-top: 12vh;
+}
+
+.fo_sz {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+body {
+    background-color: black;
+}
+
+.pos {
+    padding-bottom: 30vh;
+    padding-top: 13vh;
+}
+
+.bor {
+    border: 3px solid black;
+    animation: border_ani 3s linear infinite;
+}
+
+
+@keyframes border_ani {
+    0% {
+        border-color: #ff0000;
+    }
+
+    10% {
+        border-color: #ff7300;
+    }
+
+    20% {
+        border-color: #fffb00;
+    }
+
+    25% {
+        border-color: bisque;
+    }
+
+    30% {
+        border-color: #48ff00;
+    }
+
+    40% {
+        border-color: #00ffd5;
+    }
+
+    50% {
+        border-color: #002bff;
+    }
+
+    60% {
+        border-color: #7a00ff;
+    }
+
+    70% {
+        border-color: #ff00c8;
+    }
+
+    75% {
+        border-color: blueviolet;
+    }
+
+    80% {
+        background-color: gray;
+    }
+
+    90% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: teal;
+    }
+
+}
