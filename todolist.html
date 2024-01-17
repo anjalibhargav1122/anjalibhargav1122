@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO App By Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="todolist.css">
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="pic">
+
+        <div class="container pos  bor">
+
+            <div class="container ">
+                <div class="mx-auto" style="max-width: 700px;">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control " placeholder="Enter your task "
+                            aria-label="Recipient's username" id="username" aria-describedby="button-addon2">
+                        <button class="btn text-white btn-info" type="button" id="adduser">Add task</button>
+                    </div>
+
+                    <div class="display">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-white">
+                                    <th class="fo_sz " scope="col">#</th>
+                                    <th class="fo_sz" scope="col">Task</th>
+                                    <th class="fo_sz" scope="col">Actions</th>
+
+                                </tr>
+                            </thead>
+
+
+
+
+
+
+                            <tbody id="records">
+
+                                <tr id="task-0">
+                                    <th class="text-white" scope="row">1</th>
+                                    <td class="task-name text-white">Anjali Bhargav</td>
+                                    <td>
+                                        <input type="checkbox" onchange="toggleCompleted(0)">
+                                        <i class="btn text-white btn-info mx-2 fa fa-edit" onclick="editinfo(0)"></i>
+
+                                        <i class="btn text-white btn-danger fa-solid fa-trash"
+                                            onclick="deleteinfo(0)"></i>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="todolist.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+
+</html>
